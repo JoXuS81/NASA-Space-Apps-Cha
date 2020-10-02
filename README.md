@@ -1,1 +1,1 @@
-# NASA-Space-Apps-Cha
+# NASA-Space-Apps-Challenge
