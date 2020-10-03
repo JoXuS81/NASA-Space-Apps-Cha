@@ -1,0 +1,190 @@
+/*  ***** FONTS *****  */
+@font-face {
+    font-family:archivo_narrow;
+    src:url("../Fonts/Archivo Narrow/ArchivoNarrow-Regular.ttf");
+}
+@font-face {
+    font-family:poppins;
+    src:url("../Fonts/Poppins/Poppins-Regular.ttf");
+}
+@font-face {
+    font-family:titillium_web;
+    src:url("../Fonts/Titillium Web/TitilliumWeb-Regular.ttf");
+}
+
+
+/*  ***** MIXINS *****  */
+@mixin h1 {
+    color:$light;
+    font-size:45px;
+    font-weight:bold;
+}
+@mixin h1_2000 {
+    font-size:56px;
+}
+@mixin h1_2500 {
+    font-size:70px;
+}
+@mixin h2 {
+    color:$light;
+    font-size:35px;
+}
+@mixin h2_2000 {
+    font-size:43px;
+}
+@mixin h2_2500 {
+    font-size:53px;
+}
+@mixin hide {
+    display:none;
+}
+
+
+/*  ***** VARIABLES *****  */
+$blue:#37ABBB;
+$brightdark:rgba(0,0,0,0.3);
+$dark:#000000;
+$light:#ffffff;
+
+
+/*  ***** ABOUT *****  */
+.about {
+    @include hide;
+    background:url("../Images/About/Earth.jpg");
+    background-position:center;
+    background-repeat:no-repeat;
+    background-size:cover;
+    box-shadow:inset 0 0 0 4000px $brightdark;
+    margin:0;
+    -moz-background-size:cover;
+    -o-background-size:cover;
+    padding:0;
+    -webkit-background-size:cover;
+    width:90%;
+    .heading {
+        border-bottom:12px solid transparent;
+        color:#445C60;
+        display:inline-block;
+        font-family:titillium_web;
+        font-size:96px;
+        font-weight:bold;
+        margin-left:178px;
+        margin-top:186px;
+        position:relative;
+        &:before {
+            background:#62C3E1;
+            bottom:-12px;
+            content:'';
+            height:12px;
+            left:0;
+            position:absolute;
+            width:125px;
+        }
+    }
+    .info {
+        color:white;
+        font-family:raleway;
+        font-size:20px;
+        font-weight:bold;
+        margin-bottom:186px;
+        margin-left:178px;
+        margin-top:30px;
+        width:529px;
+    }
+}    
+
+
+@media (min-width:1601px) and (max-width:2000px) {
+    .about {
+        .heading {
+            border-bottom:15px solid transparent;
+            font-size:120px;
+            margin-left:223px;
+            margin-top:232px;
+            &:before {
+                bottom:-15px;
+                height:15px;
+                width:156px;
+            }
+        }
+        .info {
+            font-size:25px;
+            margin-bottom:232px;
+            margin-left:223px;
+            margin-top:37px;
+            width:661px;
+        }
+    }          
+} 
+
+
+@media (min-width:2001px) and (max-width:2500px) {
+    .about {
+        .heading {
+            border-bottom:18px solid transparent;
+            font-size:150px;
+            margin-left:279px;
+            margin-top:290px;
+            &:before {
+                bottom:-18px;
+                height:18px;
+                width:195px;
+            }
+        }
+        .info {
+            font-size:31px;
+            margin-bottom:290px;
+            margin-left:279px;
+            margin-top:46px;
+            width:826px;
+        }
+    }          
+}   
+
+
+@media (min-width:2501px) and (max-width:3125px) {
+    .about {
+        .heading {
+            border-bottom:22px solid transparent;
+            font-size:187px;
+            margin-left:349px;
+            margin-top:363px;
+            &:before {
+                bottom:-22px;
+                height:22px;
+                width:243px;
+            }
+        }
+        .info {
+            font-size:38px;
+            margin-bottom:363px;
+            margin-left:349px;
+            margin-top:57px;
+            width:1033px;
+        }
+    }          
+} 
+
+
+@media (min-width:3126px) {
+    .about {
+        .heading {
+            border-bottom:27px solid transparent;
+            font-size:233px;
+            margin-left:436px;
+            margin-top:454px;
+            &:before {
+                bottom:-27px;
+                height:27px;
+                width:304px;
+            }
+        }
+        .info {
+            font-size:47px;
+            margin-bottom:454px;
+            margin-left:436px;
+            margin-top:71px;
+            width:1291px;
+        }
+    }          
+}                                                         

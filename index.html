@@ -1,0 +1,837 @@
+<!DOCTYPE html>
+
+<!-- Website/Template Language -->
+<html lang = "en">
+
+
+    <head>
+        <meta charset = "utf-8">
+
+        <!-- Description, important for SEO -->
+        <meta name = "description" content = "Decode Earth Project (for NASA Space Apps Challenge).">
+
+        <!-- Keywords -->
+        <meta name = "keywords" content = "NASA, Space, Apps, Earth, Science, Research, Missions, History">
+
+        <!-- Suiting for different device sizes -->
+        <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=0, minimum-scale=1.0">
+        <meta http-equiv = "X-UA-Compatible" content = "ie=edge">
+        <link rel = "icon" type = "image/png" href = "Images/Title/Title_Logo.png">
+        <link rel = "stylesheet" type = "text/css" href = "SCSS_CSS/bootstrap.css">
+        <link rel = "stylesheet" type = "text/css" href = "SCSS_CSS/bootstrap.min.css">
+        <link rel = "stylesheet" type = "text/css" href = "SCSS_CSS/bootstrap-grid.css">
+        <link rel = "stylesheet" type = "text/css" href = "SCSS_CSS/bootstrap-grid.min.css">
+        <link rel = "stylesheet" type = "text/css" href = "SCSS_CSS/bootstrap-reboot.css">
+        <link rel = "stylesheet" type = "text/css" href = "SCSS_CSS/bootstrap-reboot.min.css">
+        <link rel = "stylesheet" href = "SCSS_CSS/style.css">
+        <link rel = "stylesheet" href = "SCSS_CSS/responsive.css">
+        <link rel = "stylesheet" href = "https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity = "sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin = "anonymous">
+        <title>
+            Decode EartH - Blue Spot in the Darkness
+        </title>
+
+
+<!-- 
+        
+******************        
+COPYRIGHT, SOURCES
+****************** 
+
+1. https://2020.spaceappschallenge.org/challenges/										        
+CHALLENGES
+2. https://unsplash.com/photos/qfi4bEHYhOA (Adam Bouse)										    
+HOME, BACKGROUND
+3. https://www.nationalgeographic.org/topics/resource-library-age-earth/?q=&page=1&per_page=25	
+EARTH, AGE
+4. Google Translate														                        
+TRANSLATE HELP	
+5. Font Awesome															                        
+ICONS
+6. https://science.nasa.gov/earth-science											            
+ABOUT NASA EARTH SCIENCE
+7. https://pixabay.com/illustrations/earth-planet-world-globe-space-1617121/ (PIRO4D)		    
+ABOUT, EARTH
+8. https://solarsystem.nasa.gov/planets/earth/by-the-numbers/									
+EARTH FACTS
+9. https://space-facts.com/earth/												                
+EARTH, FACTS
+10. https://unsplash.com/photos/K785Da4A_JA (Silas Baisch)									    
+MISSIONS, AQUA
+11. https://2020.spaceappschallenge.org/locations/se%C5%BEana									
+SEZANA PAGE
+12. https://science.nasa.gov/missions-page?field_division_tid=103&field_phase_tid=All			
+NASA EARTH, MISSIONS
+13. https://unsplash.com/photos/wnOJ83k8r4w (Robin Sommer)									    
+MISSIONS, ATOM
+14. https://imageresizer.com/													                
+CROP IMAGES
+15. https://pixabay.com/illustrations/solar-system-planet-planetary-system-11111/ (WikiImages)  
+DSCOVR IMAGE
+16. https://unsplash.com/photos/M-EwSRl8BK8 (Alexander Hafemann)								
+ICEBRIDGE IMAGE
+17. https://unsplash.com/photos/lFevQyL8jRk (Zoltan Tasi)									    
+SUOMI NPP IMAGE
+18. https://unsplash.com/photos/Gg7uKdHFb_c (Ryan Schroeder)									
+LANDSAT 8 IMAGE
+19. https://science.nasa.gov/earth-science/big-questions									    
+SCIENCE SECTION
+20. https://pixabay.com/photos/earth-blue-planet-globe-planet-11015/ (WikiImages)				
+SCIENCE, EARTH
+21. https://unsplash.com/photos/6-jTZysYY_U (NASA)										        
+RESEARCH, IMG
+22. https://science.nasa.gov/earth-science/focus-areas										    
+RESEARCH, TEXT
+23. https://science.nasa.gov/science-news?topic=28										        
+NEWS, TEXT
+24. https://unsplash.com/photos/zhqD0tw1peA (Jessica Furtney)									
+NEWS, WATER, IMAGE
+25. https://unsplash.com/photos/hsu2LeJ5ugE (Cristofer Jeschke)									
+NEWS, FIRE, IMAGE
+26. https://unsplash.com/photos/t-EuCKH652s (ray laskey)									    
+NEWS, ICE, IMAGE
+27. https://www.nasa.gov/50th/50th_magazine/earthSciences.html									
+EARTH SCIENCE, HISTORY
+28. https://pixabay.com/photos/nasa-earth-map-night-sky-cities-140304/ (14398)					
+CONTACT, EARTH MAP
+29. https://www.nasa.gov/centers/hq/about/mailing_tips.html									    
+NASA, ADDRESS
+30. https://www.nasa.gov/news/media/info/index.html										        
+NASA, PHONE
+31. https://pixabay.com/illustrations/satellite-earth-planet-universe-3977165/ (PIRO4D)			
+HISTORY, SATELLITES
+32. https://pixabay.com/illustrations/satellite-earth-planet-universe-4269348/ (PIRO4D)			
+HISTORY, NIMBUS
+33. https://pixabay.com/photos/sun-fireball-solar-flare-sunlight-11582/ (WikiImages)			
+HISTORY, SUN
+34. https://unsplash.com/photos/HNkgPFBShSw (Daniel Olah)									    
+HISTORY, ATMOSPHERE
+35. https://unsplash.com/photos/8Ogfqvw15Rg (Joel Vodell)									    
+HISTORY, JASON-1 IMAGE
+36. https://unsplash.com/photos/vpHCfunwDrQ (Emma Francis)									    
+HISTORY, ICESAT IMAGE
+37. https://stackoverflow.com/questions/38137476/how-to-create-border-bottom-with-2-different-color (Mohammad Usman)    
+BOTTOM BORDER, DIFFERENT COLOR
+38. https://www.w3schools.com/cssref/tryit.asp?filename=trycss3_box-shadow							
+SHADOWS
+39. https://www.w3schools.com/howto/howto_css_center-vertical.asp								
+VERTICAL CENTERING
+40. https://stackoverflow.com/questions/12609110/responsive-css-background-images  (Pnsadeghy)              			
+RESPONSIVE BACKGROUND IMAGE
+41. https://www.w3schools.com/css/css_border.asp										
+BORDERS
+42. https://www.canva.com/colors/color-wheel/											
+COLOR WHEEL
+43. https://solarsystem.nasa.gov/planets/earth/overview/									
+NASA, EARTH
+44. http://hex2rgba.devoth.com/													
+HEX TO RGBA
+45. https://stackoverflow.com/questions/4889601/position-fixed-doesnt-work-on-ipad-and-iphone/11129912 (Jason D.)		
+VIEWPORT
+46. https://www.webdeveloper.com/d/367195-avoid-validation-warnings-on-meta-viewport (phpmillion)				
+VIEWPORT AND VALIDATION 
+47. Calculator															
+CALCULATING
+48. https://www.nasa.gov/mission_pages/landsat/main/index.html									
+LANDSAT SCIENCE
+49. https://unsplash.com/photos/H5PnIYI_1I0 (Camille Couvez)									
+BODY IMAGE
+50. https://stackoverflow.com/questions/57690693/stretched-images-in-ie-11 (user10497113)					
+IMG, MAX-WIDTH
+51. https://www.youtube.com/watch?v=szFwUsGs9eU											
+LOADER
+52. https://stackoverflow.com/questions/2906582/how-to-create-an-html-button-that-acts-like-a-link (BalusC)			
+JAVASCRIPT, LINK
+53. Visual Studio Code														
+CORRECT CODE MISTAKES
+54. https://covid19.spaceappschallenge.org/challenges/covid-challenges/integrated-assessment/teams/gideon/project		
+HELP TO WRITE ABOUT PROJECT
+55. Google Translate														
+TRANSLATION HELP
+  
+-->
+    </head>
+
+
+    <body>
+
+
+        <div class = "d-flex justify-content-center">
+            
+            <!-- LOADER -->
+            <section class = "loader">
+
+                <!-- Text -->
+                <h1 class = "text-center">
+                    Decode Earth
+                </h1>
+
+                <!-- Spinner -->
+                <ul class = "m-0 p-0 loader_spinner">
+                    <li class = "loader_planet">
+                    </li>
+                    <li class = "loader_planet">
+                    </li>
+                    <li class = "earth">
+                    </li>
+                    <li class = "loader_planet">
+                    </li>
+                </ul>
+
+            </section>
+
+        </div>
+
+
+        <div class = "d-flex justify-content-center">
+
+            <!-- HOME -->
+            <section class = "home" id = "home_anchor">
+                <div class = "home_content">
+
+                    <!-- Hamburger Menu -->
+                    <div class = "home_hamburger">
+                        <div class = "home_line home_lineTop">
+                        </div>
+                        <div class = "home_line home_lineMiddle">
+                        </div>
+                        <div class = "home_line home_lineBottom">
+                        </div>
+                    </div>
+
+                    <div class = "row m-0 p-0 home_lo">
+
+                        <!-- Logo -->
+                        <div class = "col-xl-6 m-0 p-0">
+                            <a href = "#" class = "home_logo">
+                                <h2 class = "p-0 home_portfolix">
+                                    DECODE EART<span class = "m-0 p-0">H</span> 
+                                </h2>
+                            </a>
+                        </div>
+
+                        <!-- Navbar -->
+                        <div class = "col-xl-6 d-flex justify-content-end align-items-center m-0 p-0">
+                            <div class = "pr-0 pb-0 pl-0 home_menu">
+                                <div class = "home_mobile">
+                                    <div>
+                                        <ul>
+                                            <li class = "home_ho">
+                                                <h4 class = "m-0 p-0">
+                                                    <a href = "#" class = "home_click ho">
+                                                        Home
+                                                    </a>
+                                                </h4>
+                                            </li>
+                                            <li>
+                                                <h4 class = "m-0 p-0">
+                                                    <a href = "#" class = "home_click ab">
+                                                        About
+                                                    </a>
+                                                </h4>
+                                            </li>
+                                            <li>
+                                                <h4 class = "m-0 p-0">
+                                                    <a href = "#" class = "home_click mi">
+                                                        Missions
+                                                    </a>
+                                                </h4>
+                                            </li>
+                                            <li>
+                                                <h4 class = "m-0 p-0">
+                                                    <a href = "#" class = "home_click sc">
+                                                        Science
+                                                    </a>
+                                                </h4>
+                                            </li>
+                                            <li>
+                                                <h4 class = "m-0 p-0">
+                                                    <a href = "#" class = "home_click re">
+                                                        Research
+                                                    </a>
+                                                </h4>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- Image Info and Social Icons -->
+                    <div class = "row mr-0 mb-0 ml-0 p-0 d-flex justify-content-center align-items-center h-100 home_info">
+                        <div>
+                            <div class = "home_image">
+                                <h1 class = "magnificient">
+                                    MAGNIFICIENT BLUE PLANET
+                                </h1>
+                            </div>
+                            <h2 class = "text-center home_developer">
+                                4.54 BILLIONS OF YEARS
+                            </h2>
+                            <div class = "d-flex justify-content-center">
+                                <a href = "https://solarsystem.nasa.gov/planets/earth/overview/" class = "text-center home_frontend">
+                                    OUR WORLD
+                                </a>
+                            </div>
+                            <div class = "d-flex justify-content-center home_social">
+                                <div>
+                                    <a href = "https://www.facebook.com/nasaearth/">
+                                        <img class = "img-fluid img_fb" src = "Images/Home/Facebook.png" alt = "Facebook Logo">
+                                    </a>
+                                    <a href = "https://twitter.com/nasaearth">
+                                        <img class = "img-fluid img_twitter" src = "Images/Home/Twitter.png" alt = "Twitter Logo">
+                                    </a>
+                                    <a href = "https://www.linkedin.com/company/nasa">
+                                        <img class = "img-fluid img" src = "Images/Home/Linkedin.png" alt = "Linkedin Logo">
+                                    </a>
+                                    <a href = "https://www.instagram.com/nasaearth/">
+                                        <img class = "img-fluid img" src = "Images/Home/Instagram.png" alt = "Instagram Logo">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+        </div>
+
+
+        <div class = "d-flex justify-content-center">
+
+            <!-- ABOUT -->
+            <section class = "about" id = "about_anchor">
+                <div class = "he">
+                    <h1 class = "heading">
+                        ABOUT
+                    </h1>
+                </div>
+                <div class = "text">
+                    <p class = "info">
+                        NASA’s Earth Science Division (ESD) missions help us to understand our planet’s interconnected systems, from a global scale down to minute processes. Working in concert with a satellite network of international partners, ESD can measure precipitation around the world, and it can employ its own constellation of small satellites to look into the eye of a hurricane. ESD technology can track dust storms across continents and mosquito habitats across cities.
+                    </p>
+                </div>
+            </section>
+
+        </div>
+
+
+        <div class = "d-flex justify-content-center">
+
+            <!-- HISTORY -->
+            <section class = "history">
+                <div class = "row m-0 p-0">
+                    <div class = "col-xl-6 m-0 p-0 holder">
+                        <div class = "block" onclick = "window.location.href = 'https://science.nasa.gov/missions/tiros'">
+                            <img class = "img-fluid img" src = "Images/History/Satellite.png" alt = "Satellite">
+                            <h1 class = "year">
+                                1960
+                            </h1>
+                            <h1 class = "name">
+                                TIROS
+                            </h1>
+                            <h2 class = "info">
+                                America’s First Weather Satellite 
+                            </h2>
+                        </div>
+                    </div> 
+                    <div class = "col-xl-6 m-0 p-0">
+                        <div class = "block_right" onclick = "window.location.href = 'https://nssdc.gsfc.nasa.gov/earth/nimbus.html'">
+                            <img class = "img-fluid img" src = "Images/History/Nimbus.png" alt = "Nimbus">
+                            <h1 class = "year">
+                                1964
+                            </h1>
+                            <h1 class = "name">
+                                NIMBUS
+                            </h1>
+                            <h2 class = "info">
+                                Second Gen. of Weather Satellites
+                            </h2>
+                        </div>
+                    </div> 
+                    <div class = "col-xl-6 m-0 p-0 holder">
+                        <div class = "block" onclick = "window.location.href = 'http://www.acrim.com/'">
+                            <img class = "img-fluid img" src = "Images/History/Sun.png" alt = "Sun">
+                            <h1 class = "year">
+                                1978
+                            </h1>
+                            <h1 class = "name">
+                                ACRIMSAT
+                            </h1>
+                            <h2 class = "info">
+                                Monitoring Solar Radiation
+                            </h2> 
+                        </div>
+                    </div> 
+                    <div class = "col-xl-6 m-0 p-0">
+                        <div class = "block_right" onclick = "window.location.href = 'https://science.nasa.gov/missions/atlas'">
+                            <img class = "img-fluid img" src = "Images/History/Atmosphere.png" alt = "Atmosphere">
+                            <h1 class = "year">
+                                1992
+                            </h1>
+                            <h1 class = "name">
+                                ATLAS
+                            </h1>
+                            <h2 class = "info">
+                                Atmospheric, Solar Science
+                            </h2>
+                        </div>
+                    </div> 
+                    <div class = "col-xl-6 m-0 p-0 holder">
+                        <div class = "block" onclick = "window.location.href = 'https://sealevel.jpl.nasa.gov/missions/jason1/'">
+                            <img class = "img-fluid img" src = "Images/History/Jason.png" alt = "Jason">
+                            <h1 class = "year">
+                                2001
+                            </h1>
+                            <h1 class = "name">
+                                JASON-1
+                            </h1>
+                            <h2 class = "info">
+                                Measuring Sea Surface Height
+                            </h2>
+                        </div>
+                    </div> 
+                    <div class = "col-xl-6 m-0 pt-0 pr-0 pl-0 bottom">
+                        <div class = "block_right" onclick = "window.location.href = 'https://icesat.gsfc.nasa.gov/icesat/'">
+                            <img class = "img-fluid img" src = "Images/History/Icesat.png" alt = "Ice">
+                            <h1 class = "year">
+                                2003
+                            </h1>
+                            <h1 class = "name">
+                                ICESAT
+                            </h1>
+                            <h2 class = "info">
+                                Ice, Clouds and Land Elevation
+                            </h2>
+                        </div>
+                    </div> 
+                </div>
+            </section>
+
+        </div>
+
+
+        <div class = "d-flex justify-content-center">
+
+            <!-- MISSIONS -->
+            <section class = "missions" id = "missions_anchor">
+                <div class = "he">
+                    <h1 class = "heading">
+                        MISSIONS
+                    </h1>
+                </div>
+                <div class = "text">
+                    <p class = "info">
+                        Our important active projects.
+                    </p>
+                </div>
+                <div class = "row m-0 p-0">
+                    <div class = "col-xl-6 m-0 p-0 holder">
+                        <div class = "mission" onclick = "window.location.href = 'https://aqua.nasa.gov/'">
+                            <img class = "img-fluid w-100 img" src = "Images/Missions/Aqua.png" alt = "Aqua">
+                            <div class = "layer">
+                            </div>
+                            <h2 class = "name">
+                                Aqua
+                            </h2>
+                            <h3 class = "info_area">
+                                Studying the precipitation, evaporation and cycling of water
+                            </h3>
+                        </div>
+                    </div>
+                    <div class = "col-xl-6 m-0 p-0 d-flex justify-content-xl-end justify-content-center holder">
+                        <div class = "mission_right mar" onclick = "window.location.href = 'https://espo.nasa.gov/atom'">
+                            <img class = "img-fluid w-100 img" src = "Images/Missions/Atom.png" alt = "Atom">
+                            <div class = "layer">
+                            </div>
+                            <h2 class = "name">
+                                Atom
+                            </h2>
+                            <a href = "https://espo.nasa.gov/atom">
+                                <h3 class = "info_area">
+                                    Studying the impact of air pollution
+                                </h3>
+                            </a>
+                        </div>
+                    </div>
+                    <div class = "col-xl-6 m-0 p-0 holder">
+                        <div class = "mission marg" onclick = "window.location.href = 'https://www.nesdis.noaa.gov/content/dscovr-deep-space-climate-observatory'">
+                            <img class = "img-fluid w-100 img" src = "Images/Missions/Dscovr.png" alt = "Dscovr">
+                            <div class = "layer">
+                            </div>
+                            <h2 class = "name">
+                                Dscovr
+                            </h2>
+                            <h3 class = "info_area">
+                                Monitoring the Solar Wind and Observing the Earth
+                            </h3>
+                        </div>
+                    </div>
+                    <div class = "col-xl-6 m-0 p-0 d-flex justify-content-xl-end justify-content-center holder">
+                        <div class = "mission_right marg" onclick = "window.location.href = 'https://icebridge.gsfc.nasa.gov/'">
+                            <img class = "img-fluid w-100 img" src = "Images/Missions/IceBridge.png" alt = "IceBridge">
+                            <div class = "layer">
+                            </div>
+                            <h2 class = "name">
+                                IceBridge
+                            </h2>
+                            <h3 class = "info_area">
+                                Understanding Polar Regions and the Global Climate System
+                            </h3>
+                        </div>
+                    </div>
+                    <div class = "col-xl-6 m-0 p-0 holder">
+                        <div class = "mission marg" onclick = "window.location.href = 'https://www.nasa.gov/mission_pages/NPP/main/index.html'">
+                            <img class = "img-fluid w-100 img" src = "Images/Missions/Suomi.png" alt = "Suomi">
+                            <div class = "layer">
+                            </div>
+                            <h2 class = "name">
+                                Suomi NPP
+                            </h2>
+                            <h3 class = "info_area">
+                                Observing and Predicting the Course of Climate Change
+                            </h3>
+                        </div>
+                    </div>
+                    <div class = "col-xl-6 m-0 pt-0 pr-0 pl-0 d-flex justify-content-xl-end justify-content-center bottom holder">
+                        <div class = "mission_right marg" onclick = "window.location.href = 'https://www.nasa.gov/mission_pages/landsat/main/index.html'">
+                            <img class = "img-fluid w-100 img" src = "Images/Missions/Landsat.png" alt = "Landsat">
+                            <div class = "layer">
+                            </div>
+                            <h2 class = "name">
+                                Landsat
+                            </h2>
+                            <h3 class = "info_area">
+                                Continuing the Data Record of the Earth’s Land Cover
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+
+
+        <div class = "d-flex justify-content-center">
+
+            <!-- SCIENCE -->
+            <section class = "science" id = "science_anchor">
+                <div class = "he">
+                <h1 class = "heading">
+                    SCIENCE
+                </h1>
+                </div>
+                <div class = "text">
+                    <p class = "info">
+                        NASA’s strategic objective for Earth science is to advance knowledge of Earth as a system in order to meet the challenges of environmental change and to improve life on our planet.
+                    </p>
+                </div>
+                <div class = "row mt-0 p-0 content">
+                    <div class = "col-xl-6 m-0 p-0 d-flex justify-content-xl-start justify-content-center">
+                        <img class = "img-fluid w-100 img" src = "Images/Science/Earth.png" alt = "Earth">
+                    </div>
+                    <div class = "col-xl-6 m-0 p-0 d-flex align-items-center justify-content-xl-end justify-content-center">
+                        <div class = "mt-0 mb-0 ml-0 pt-0 pr-0 pl-0 info">
+                            <h2 class = "mr-0 mb-0 ml-0 p-0 goals">
+                                NASA EARTH SCIENCE GOALS
+                            </h2>
+                            <h4 class = "goal top">
+                                Atmospheric Composition
+                            </h4>
+                            <h4 class = "goal">
+                                Weather
+                            </h4>
+                            <h4 class = "goal">
+                                Carbon Cycle and Ecosystems
+                            </h4>
+                            <h4 class = "goal">
+                                Water and Energy Circle
+                            </h4>
+                            <h4 class = "goal">
+                                Climate Variability and Change
+                            </h4>
+                            <h4 class = "goal">
+                                Earth Surface and Interior
+                            </h4>
+                            <h4 class = "goal">
+                                Societal Benefit
+                            </h4>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+
+
+        <div class = "d-flex justify-content-center">
+
+            <!-- RESEARCH -->
+            <section class = "research" id = "research_anchor">
+                <div class = "he">
+                    <h1 class = "heading">
+                        RESEARCH
+                    </h1>
+                </div>
+                <div class = "text">
+                    <p class = "info">
+                        To understand natural and human-caused changes on Earth, NASA’s Earth Science Division uses unique global observations from space, air, sea and on land. This data enables informed decision-making for agriculture, water and food security, urban planning, disaster preparedness and response, transportation, climate and weather, and myriad other things that benefit life on Earth.
+                    </p>
+                </div>
+                <div class = "row mt-0 pt-0 pr-0 pl-0 content">
+                    <div class = "col-xl-12 m-0 p-0">
+                        <h1 class = "mr-0 mb-0 p-0 areas">
+                            OUR RESEARCH AREAS
+                        </h1>
+                    </div>
+                    <div class = "col-xl-6 m-0 p-0">
+                        <h1 class = "project">
+                            Landsat
+                        </h1>
+                        <div class = "holder">
+                            <h4 class = "text">
+                                Long-term missions such as Landsat, which is operated by NASA in conjunction with the U.S. Geological Service (USGS), have given us decades of data and information about how the Earth is changing. Landsat missions, in fact, first launched in 1972, have provided the longest continuous global record of Earth’s surface.
+                            </h4>
+                        </div>
+                        <h1 class = "marg project">
+                            VIIRS
+                        </h1>
+                        <div class = "holder">
+                            <h4 class = "text">
+                                Operated by NASA and the National Oceanic and Atmospheric Administration (NOAA), measures clouds, ocean color, Earth’s surface temperature and fires ― among other things. VIIRS observations can track Earth changes from phytoplankton algae blooms in the sea, to fire and ice on land, the city lights that blaze in the night, and the quality of our air.
+                            </h4>
+                        </div>
+                    </div>
+                    <div class = "col-xl-6 m-0 p-0">
+                        <h1 class = "project">
+                            ESSM
+                        </h1>
+                        <div class = "holder">
+                            <h4 class = "text">
+                                ESM includes a broad range of multidisciplinary investigations aimed at developing a scientific understanding of the Earth system and its response to natural and human-induced forces, by implementing ESD strategic missions, including most of the missions that provide additional sustained measurements, such as land imaging and climate continuity.
+                            </h4>
+                        </div>
+                        <h1 class = "marg project">
+                            ESSP
+                        </h1>
+                        <div class = "holder">
+                            <h4 class = "text bottom">
+                                ESSP implements low- to moderate-cost research and applications missions that foster revolutionary science and train future leaders in space-based Earth science and applications. This program includes the Earth Venture missions recommended in the decadal survey. The ESSP program also includes operating missions that were competitively selected and follow-on missions.
+                            </h4>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+
+
+        <div class = "d-flex justify-content-center">
+
+            <!-- NEWS -->
+            <section class = "news">
+                <div class = "he">
+                    <h1 class = "heading">
+                        NEWS
+                    </h1>
+                </div>
+                <div class = "text">
+                    <p class = "info">
+                        Science@NASA | EARTH
+                    </p>
+                </div>
+                <div class = "row m-0 p-0">
+                    <div class = "col-xl-6 m-0 p-0">
+                        <div class = "news_area">
+                            <h1 class = "name">
+                                WATER
+                            </h1>
+                            <h2 class = "description">
+                                Transforming Water Management in the U.S. West with NASA Data
+                            </h2>
+                            <h4 class = "time">
+                                September 2020
+                            </h4>
+                            <div class = "tex">
+                                <h4 class = "text_area">
+                                    The web-based platform called OpenET will put NASA data in the hands of farmers, water managers and conservation groups to accelerate improvements and innovations in water management.
+                                </h4>
+                            </div>
+                            <div class = "button">
+                                <a class = "link" href = "https://www.nasa.gov/feature/transforming-water-management-in-the-us-west-with-nasa-data/">
+                                    READ MORE
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class = "col-xl-6 m-0 p-0 d-flex justify-content-xl-end justify-content-center">
+                        <div class = "image">
+                            <img class = "img-fluid w-100 img" src = "Images/News/Water.png" alt = "Water">
+                        </div>
+                    </div>
+                    <div class = "col-xl-6 mr-0 mb-0 ml-0 p-0 marg">
+                        <div class = "news_area">
+                            <h1 class = "name">
+                                FIRES
+                            </h1>
+                            <h2 class = "description">
+                                Western U.S. Smoke From Fires Stretching Across the Country
+                            </h2>
+                            <h4 class = "time">
+                                September 2020
+                            </h4>
+                            <div class = "tex">
+                                <h4 class = "text_area">
+                                    Smoke from fires in the western United States and moving east and carrying dangerous aerosols across the jet stream to the East.
+                                </h4>
+                            </div>
+                            <div class = "button">
+                                <a class = "link" href = "https://www.nasa.gov/feature/goddard/2020/western-us-smoke-from-fires-stretching-across-the-country/">
+                                    READ MORE
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class = "col-xl-6 mr-0 mb-0 ml-0 p-0 d-flex justify-content-xl-end justify-content-center marg marg_im">
+                        <div class = "image">
+                            <img class = "img-fluid w-100 img" src = "Images/News/Fire.png" alt = "Fire">
+                        </div>
+                    </div>
+                    <div class = "col-xl-6 mr-0 mb-0 ml-0 p-0 marg">
+                        <div class = "news_area">
+                            <h1 class = "name">
+                                SEA LEVEL
+                            </h1>
+                            <h2 class = "description">
+                                Emissions Could Add 15 Inches to 2100 Sea Level Rise
+                            </h2>
+                            <h4 class = "time">
+                                September 2020
+                            </h4>
+                            <div class = "tex">
+                                <h4 class = "text_area">
+                                    If greenhouse gas emissions continue apace, Greenland and Antarctica’s ice sheets could together contribute more than 15 inches of global sea level rise by 2100.
+                                </h4>
+                            </div>
+                            <div class = "button botto">
+                                <a class = "link" href = "https://www.nasa.gov/feature/goddard/2020/emissions-could-add-15-inches-to-2100-sea-level-rise-nasa-led-study-finds/">
+                                    READ MORE
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class = "col-xl-6 mr-0 mb-0 ml-0 p-0 d-flex justify-content-xl-end justify-content-center marg marg_im">
+                        <div class = "image">
+                            <img class = "img-fluid w-100 img bottom" src = "Images/News/Iceberg.png" alt = "Iceberg">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+
+
+        <div class = "d-flex justify-content-center">
+
+            <!-- CONTACT -->
+            <section class = "contact">
+                <div class = "he">
+                    <h1 class = "heading">
+                        CONTACT
+                    </h1>
+                </div>
+                <div class = "text">
+                    <p class = "info">
+                        Contact us and we will answer in 24 hours.
+                    </p>
+                </div>
+                <div class = "bottom_area">
+                    <h1 class = "text-center questions">
+                        We are available for your questions.
+                    </h1>
+                    <div class = "d-flex justify-content-center info_zone top">
+                        <div>
+                            <img class = "img-fluid img img_location" src = "Images/Contact/Location.png" alt = "Location">
+                            <h2 class = "info_area">
+                                300 E Street SW, Washington DC
+                            </h2>
+                        </div>
+                    </div>
+                    <div class = "d-flex justify-content-center info_zone">
+                        <div>
+                            <img class = "img-fluid img img_phone" src = "Images/Contact/Phone.png" alt = "Phone">
+                            <h2 class = "info_area bo">
+                                202-358-0668
+                            </h2>
+                        </div>
+                    </div>
+                    <div class = "d-flex justify-content-center info_zone">
+                        <div>
+                            <img class = "img-fluid img img_mail" src = "Images/Contact/Mail.png" alt = "Mail">
+                            <h2 class = "info_area boto">
+                                public-inquiries@hq.nasa.gov
+                            </h2>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+
+
+        <div class = "d-flex justify-content-center">
+
+            <!-- FOOTER -->
+            <section class = "footer">
+                <div class = "d-flex justify-content-center">
+                    <div>
+                        <a href = "https://www.facebook.com/nasaearth/" class = "social">
+                            <img class = "img-fluid img img_fb" src = "Images/Footer/Facebook.png" alt = "Fb">
+                        </a>
+                        <a href = "https://twitter.com/nasaearth" class = "social">
+                            <img class = "img-fluid img img_tw" src = "Images/Footer/Twitter.png" alt = "Twitter">
+                        </a>
+                        <a href = "https://www.linkedin.com/company/nasa" class = "social">
+                            <img class = "img-fluid img img_25" src = "Images/Footer/Linkedin.png" alt = "Linkedin">
+                        </a>
+                        <a href = "https://www.instagram.com/nasaearth/" class = "social">
+                            <img class = "img-fluid img img_25" src = "Images/Footer/Instagram.png" alt = "Instagram">
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+
+
+        <!-- JavaScript Connections -->
+        <script src = 'JS/jquery-3.4.1.min.js'>
+        </script>
+        <script src = 'JS/popper.min.js'>
+        </script>
+        <script src = 'JS/bootstrap.js'>
+        </script>
+        <script src = 'JS/bootstrap.min.js'>
+        </script>
+        <script src = 'JS/bootstrap.bundle.js'>
+        </script>
+        <script src = 'JS/bootstrap.bundle.min.js'>
+        </script>
+        <script src = 'JS/projects.js'>
+        </script>
+        <script src = 'JS/loading.js'>
+        </script>
+        <script src = 'JS/menu.js'>
+        </script>
+        <script src = 'JS/pageTop.js'>
+        </script>
+        <script src = 'JS/scroll.js'>
+        </script>
+
+
+    </body>
+
+
+</html>

@@ -1,0 +1,611 @@
+/*  ***** FONTS *****  */
+@font-face {
+    font-family:archivo_narrow;
+    src:url("../Fonts/Archivo Narrow/ArchivoNarrow-Regular.ttf");
+}
+@font-face {
+    font-family:poppins;
+    src:url("../Fonts/Poppins/Poppins-Regular.ttf");
+}
+@font-face {
+    font-family:raleway;
+    src:url("../Fonts/Raleway/Raleway-Regular.ttf");
+}
+
+
+/*  ***** MIXINS *****  */
+@mixin h1 {
+    color:$light;
+    font-size:45px;
+    font-weight:bold;
+}
+@mixin h1_2000 {
+    font-size:56px;
+}
+@mixin h1_2500 {
+    font-size:70px;
+}
+@mixin h1_3125 {
+    font-size:87px;
+}
+@mixin h1_3850 {
+    font-size:108px;
+}
+@mixin h2 {
+    color:$light;
+    font-size:35px;
+}
+@mixin h2_2000 {
+    font-size:43px;
+}
+@mixin h2_2500 {
+    font-size:53px;
+}
+@mixin h2_3125 {
+    font-size:66px;
+}
+@mixin h2_3850 {
+    font-size:82px;
+}
+@mixin hide {
+    display:none;
+}
+
+
+/*  ***** VARIABLES *****  */
+$blue:#37ABBB;
+$brightdark:rgba(0,0,0,0.3);
+$light:#ffffff;
+$lightblue:rgba(183, 250, 242, 0.5);
+$lightdark:rgba(0,0,0,0.75);
+
+
+/*  ***** HOME *****  */
+.home {
+    @include hide;
+    background:url("../Images/Home/Background.png");
+    background-position:center;
+    background-repeat:no-repeat;
+    background-size:cover;
+    border-top:2px solid transparent;
+    border-top-left-radius:15px;
+    border-top-right-radius:15px;
+    box-shadow:inset 0 0 0 4000px $brightdark;
+    height:100vh;
+    margin:0;
+    margin-top:50px;
+    -moz-background-size:cover;
+    -o-background-size:cover;
+    padding:0;
+    -webkit-background-size:cover;
+    width:90%;
+
+    /*  ***** Name *****  */
+    .home_developer {
+        font-family:raleway;
+        font-size:24px;
+        font-weight:bold;
+        margin-top:16px;
+    }
+
+    /*  ***** Frontend Developer *****  */
+    .home_frontend {
+        background:#5BC7C0;
+        border:1px solid #5BC7C0;
+        border-radius:10px;
+        box-shadow:5px 5px rgba(0,0,0,0.5);
+        color:white;
+        cursor:pointer;
+        font-family:raleway;
+        font-size:24px;
+        font-weight:bold;
+        margin-top:25px;
+        padding:25px 81px 25px 81px;
+        &:hover {
+            box-shadow:none;
+            color:white;
+            text-decoration:none;
+        }
+    }
+    h2 {
+        @include h2;
+    }
+
+    /*  ***** Hamburger Menu *****  */
+    .home_hamburger {
+        background:rgba(0,0,0,0.6);
+        cursor:pointer;
+        display:flex;
+        flex-direction:column;
+        height:50px;
+        justify-content:space-around;
+        padding:10px;
+        position:fixed;
+        right:122px;
+        top:57px;
+        visibility:hidden;
+        width:55px;
+        z-index:21;
+    }
+
+    /*  ***** Image *****  */
+    .home_image {
+        .magnificient {
+            color:#55CED6;
+            font-family:raleway;
+            font-size:64px;
+            font-weight:bold;
+        }
+    }
+
+    .home_info {
+        position:absolute;
+        top:50px;
+        width:90%;
+    }
+
+    .home_logo {
+        text-decoration:none;
+    }
+    .home_menu {
+        margin-right:96px;
+        z-index:4;
+        .home_ho {
+            display:none;
+        }
+    }
+
+    /*  ***** Logo *****  */
+    .home_portfolix {
+        font-family:raleway;
+        font-weight:bold;
+        margin-bottom:57px;
+        margin-left:96px;
+        margin-top:50px;
+    }
+
+    .home_social {
+        position:relative;
+        top:150px;
+        a {
+            &:hover {
+                text-decoration:none;
+            }
+            img {
+                margin:5px;
+            }
+        }
+    }
+    span {
+        color:$blue;
+        font-size:50px;
+    }
+
+    /*  ***** Navbar *****  */
+    ul {
+        color:$light;
+        list-style-type:none;
+        padding:0;
+        li {
+            display:inline-block;
+            h4 {
+                display:inline-block;
+                a {
+                    color:$light;
+                    font-family:archivo_narrow;
+                    margin:20px;
+                    &:hover {
+                        color:$blue;
+                        text-decoration:none;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+.home_change .home_lineBottom {
+    transform:rotateZ(405deg) translate(-8px, -6px);
+}
+.home_change .home_lineMiddle {
+    opacity:0;
+}
+.home_change .home_lineTop {
+    transform:rotateZ(-405deg) translate(-8px, 6px);
+}
+.home_change .home_menu {
+    left:calc(100% - 300px);
+}
+
+
+@media (min-width:1601px) and (max-width:2000px) {
+    .home {
+        border-top:2.5px solid transparent;
+        border-top-left-radius:18px;
+        border-top-right-radius:18px;
+        margin-top:62px;
+
+        /*  ***** Name *****  */
+        .home_developer {
+            font-size:30px;
+            margin-top:20px;
+        }
+
+        /*  ***** Frontend Developer *****  */
+        .home_frontend {
+            border:1.25px solid #5BC7C0;
+            border-radius:12.5px;
+            box-shadow:6.2px 6.2px rgba(0,0,0,0.5);
+            font-size:30px;
+            margin-top:31px;
+            padding:31px 101px 31px 101px;
+        }
+        h2 {
+            @include h2_2000;
+        }
+
+        /*  ***** Hamburger Menu *****  */
+        .home_hamburger {
+            height:62px;
+            padding:12.5px;
+            right:152px;
+            top:71px;
+            width:68px;
+        }
+
+        /*  ***** Image *****  */
+        .home_image {
+            .magnificient {
+                font-size:80px;
+            }
+        }
+
+        .home_info {
+            top:62px;
+        }
+
+        .home_menu {
+            margin-right:120px;
+            .home_click {
+                font-size:30px;
+            }
+        }
+
+        /*  ***** Logo *****  */
+        .home_portfolix {
+            margin-bottom:71px;
+            margin-left:120px;
+            margin-top:62px;
+        }
+
+        .home_social {
+            top:187px;
+            a {
+                img {
+                    margin:6.2px;
+                }
+                .img {
+                    height:31px;
+                    width:31px;
+                }
+                .img_fb {
+                    height:31px;
+                    width:17px;
+                }
+                .img_twitter {
+                    height:31px;
+                    width:38px;
+                }
+            }
+        }
+        span {
+            font-size:62px;
+        }
+
+        /*  ***** Navbar *****  */
+        ul {
+            li {
+                h4 {
+                    a {
+                        margin:25px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media (min-width:2001px) and (max-width:2500px) {
+    .home {
+        border-top:3.1px solid transparent;
+        border-top-left-radius:22px;
+        border-top-right-radius:22px;
+        margin-top:77px;
+
+        /*  ***** Name *****  */
+        .home_developer {
+            font-size:37px;
+            margin-top:25px;
+        }
+
+        /*  ***** Frontend Developer *****  */
+        .home_frontend {
+            border:1.56px solid #5BC7C0;
+            border-radius:15.6px;
+            box-shadow:7.7px 7.7px rgba(0,0,0,0.5);
+            font-size:37px;
+            margin-top:38px;
+            padding:38px 126px 38px 126px;
+        }
+        h2 {
+            @include h2_2500;
+        }
+
+        /*  ***** Hamburger Menu *****  */
+        .home_hamburger {
+            height:77px;
+            padding:15.6px;
+            right:190px;
+            top:88px;
+            width:85px;
+        }
+
+        /*  ***** Image *****  */
+        .home_image {
+            .magnificient {
+                font-size:100px;
+            }
+        }
+
+        .home_info {
+            top:77px;
+        }
+
+        .home_menu {
+            margin-right:150px;
+            .home_click {
+                font-size:37px;
+            }
+        }
+
+        /*  ***** Logo *****  */
+        .home_portfolix {
+            margin-bottom:88px;
+            margin-left:150px;
+            margin-top:77px;
+        }
+
+        .home_social {
+            top:233px;
+            a {
+                img {
+                    margin:7.7px;
+                }
+                .img {
+                    height:38px;
+                    width:38px;
+                }
+                .img_fb {
+                    height:38px;
+                    width:21px;
+                }
+                .img_twitter {
+                    height:38px;
+                    width:47px;
+                }
+            }
+        }
+        span {
+            font-size:77px;
+        }
+
+        /*  ***** Navbar *****  */
+        ul {
+            li {
+                h4 {
+                    a {
+                        margin:31px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media (min-width:2501px) and (max-width:3125px) {
+    .home {
+        border-top:3.8px solid transparent;
+        border-top-left-radius:27px;
+        border-top-right-radius:27px;
+        margin-top:96px;
+
+        /*  ***** Name *****  */
+        .home_developer {
+            font-size:46px;
+            margin-top:31px;
+        }
+
+        /*  ***** Frontend Developer *****  */
+        .home_frontend {
+            border:1.95px solid #5BC7C0;
+            border-radius:19.5px;
+            box-shadow:9.6px 9.6px rgba(0,0,0,0.5);
+            font-size:46px;
+            margin-top:47px;
+            padding:47px 157px 47px 157px;
+        }
+        h2 {
+            @include h2_3125;
+        }
+
+        /*  ***** Hamburger Menu *****  */
+        .home_hamburger {
+            height:96px;
+            padding:19.5px;
+            right:237px;
+            top:110px;
+            width:106px;
+        }
+
+        /*  ***** Image *****  */
+        .home_image {
+            .magnificient {
+                font-size:125px;
+            }
+        }
+
+        .home_info {
+            top:96px;
+        }
+
+        .home_menu {
+            margin-right:187px;
+            .home_click {
+                font-size:46px;
+            }
+        }
+
+        /*  ***** Logo *****  */
+        .home_portfolix {
+            margin-bottom:110px;
+            margin-left:187px;
+            margin-top:96px;
+        }
+
+        .home_social {
+            top:291px;
+            a {
+                img {
+                    margin:9.6px;
+                }
+                .img {
+                    height:47px;
+                    width:47px;
+                }
+                .img_fb {
+                    height:47px;
+                    width:26px;
+                }
+                .img_twitter {
+                    height:47px;
+                    width:58px;
+                }
+            }
+        }
+        span {
+            font-size:96px;
+        }
+
+        /*  ***** Navbar *****  */
+        ul {
+            li {
+                h4 {
+                    a {
+                        margin:38px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media (min-width:3126px) {
+    .home {
+        border-top:4.7px solid transparent;
+        border-top-left-radius:33px;
+        border-top-right-radius:33px;
+        margin-top:120px;
+
+        /*  ***** Name *****  */
+        .home_developer {
+            font-size:57px;
+            margin-top:38px;
+        }
+
+        /*  ***** Frontend Developer *****  */
+        .home_frontend {
+            border:2.43px solid #5BC7C0;
+            border-radius:24.3px;
+            box-shadow:12px 12px rgba(0,0,0,0.5);
+            font-size:57px;
+            margin-top:58px;
+            padding:58px 196px 58px 196px;
+        }
+        h2 {
+            @include h2_3850;
+        }
+
+        /*  ***** Hamburger Menu *****  */
+        .home_hamburger {
+            height:120px;
+            padding:24.3px;
+            right:296px;
+            top:137px;
+            width:132px;
+        }
+
+        /*  ***** Image *****  */
+        .home_image {
+            .magnificient {
+                font-size:156px;
+            }
+        }
+
+        .home_info {
+            top:120px;
+        }
+
+        .home_menu {
+            margin-right:243px;
+            .home_click {
+                font-size:57px;
+            }
+        }
+
+        /*  ***** Logo *****  */
+        .home_portfolix {
+            margin-bottom:137px;
+            margin-left:233px;
+            margin-top:120px;
+        }
+
+        .home_social {
+            top:364px;
+            a {
+                img {
+                    margin:12px;
+                }
+                .img {
+                    height:58px;
+                    width:58px;
+                }
+                .img_fb {
+                    height:58px;
+                    width:33px;
+                }
+                .img_twitter {
+                    height:58px;
+                    width:72px;
+                }
+            }
+        }
+        span {
+            font-size:120px;
+        }
+
+        /*  ***** Navbar *****  */
+        ul {
+            li {
+                h4 {
+                    a {
+                        margin:47px;
+                    }
+                }
+            }
+        }
+    }
+}
